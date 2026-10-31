@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexisHub Perú | Portafolio Digital LegalTech & JusticeTech</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        dark: {
+                            900: '#07090e',
+                            800: '#0f172a',
+                            700: '#1e293b',
+                            600: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+        }
+        .glass-card-gold {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(217, 119, 6, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-200 font-sans antialiased selection:bg-gold-600 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 w-full glass-card border-b border-gold-600/30 px-4 lg:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-gold-700 via-gold-500 to-amber-300 flex items-center justify-center text-dark-900 font-serif font-bold text-xl shadow-lg shadow-gold-600/20">
+                    L
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-lg md:text-xl text-white tracking-wider">LEXISHUB</span>
+                    <span class="text-xs text-gold-500 font-semibold block tracking-widest uppercase">Perú · JusticeTech</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#inicio" class="hover:text-gold-400 transition">Inicio</a>
+                <a href="#seccion1" class="hover:text-gold-400 transition">Hubs Globales</a>
+                <a href="#seccion2" class="hover:text-gold-400 transition">Aporte a Perú</a>
+                <a href="#seccion3" class="hover:text-gold-400 transition">Propuesta LexisHub</a>
+            </div>
+
+            <a href="#seccion3" class="px-4 py-2 text-xs md:text-sm font-semibold rounded-lg bg-gradient-to-r from-gold-600 to-amber-500 text-dark-900 hover:brightness-110 transition shadow-md shadow-gold-600/30 flex items-center gap-2">
+                <i class="fa-solid fa-scale-balanced"></i> Ver Caso Inmobiliario
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-24 flex-grow w-full">
+
+        <!-- ================= HERO / PRESENTACIÓN ================= -->
+        <section id="inicio" class="relative pt-6 pb-12">
+            <div class="absolute inset-0 bg-gradient-to-b from-gold-600/10 via-transparent to-transparent blur-3xl -z-10"></div>
+            
+            <div class="text-center space-y-6 max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs md:text-sm font-medium">
+                    <i class="fa-solid fa-graduation-cap"></i> Proyecto Integrador LegalTech & JusticeTech
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-extrabold text-white leading-tight">
+                    <span class="gold-gradient-text">LexisHub Perú</span>: Transformación Digital y Justicia Predictiva
+                </h1>
+
+                <!-- INTEGRANTES -->
+                <div class="glass-card p-6 rounded-2xl border border-gold-600/30 shadow-xl max-w-3xl mx-auto my-8">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest text-gold-400 mb-4 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-users"></i> Equipo Integrante del Proyecto
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs text-slate-300 font-medium">
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> CHAVEZ TORRES, Elizabeth Elida
+                        </div>
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> REYES MONTOYA, Antonela Francceca
+                        </div>
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> VARGAS SEMINARIO, Tatiana Isabel
+                        </div>
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> GUZMAN OTINIANO, Alisson Gabriela
+                        </div>
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> LIÑAN MARQUINA, Jharen Gaspar
+                        </div>
+                        <div class="bg-dark-800/80 p-2.5 rounded-lg border border-slate-700/50 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-500 text-xs"></i> SANCHEZ TORRES, Carlos Martin
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTRODUCCIÓN EN PROSA -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl text-left border border-slate-800 space-y-4 shadow-xl">
+                    <h2 class="text-xl font-serif font-bold text-white flex items-center gap-2 border-b border-gold-500/20 pb-3">
+                        <i class="fa-solid fa-book-open text-gold-500"></i> Presentación del Problema e Introducción
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                        Bajo el título del proyecto <strong class="text-gold-400">"LexisHub Perú"</strong>, este portafolio digital es desarrollado por el equipo integrado por Elizabeth Elida Chavez Torres, Antonela Francceca Reyes Montoya, Tatiana Isabel Vargas Seminario, Alisson Gabriela Guzman Otiniano, Jharen Gaspar Liñan Marquina y Carlos Martin Sanchez Torres. El proyecto nace para responder a una problemática crítica en el Perú: frenar las estafas en la compraventa de terrenos (caso <em class="text-amber-300 font-serif font-bold">"Tierra prometida, engaño seguro"</em>), donde la falta de interoperabilidad entre notarías, SUNARP y municipalidades causa pérdidas irreversibles de patrimonio.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                        Nuestra propuesta se sustenta en la articulación entre <strong class="text-white">LegalTech</strong> y <strong class="text-white">JusticeTech</strong>. El <em>LegalTech</em> actúa de forma preventiva mediante verificación documental automatizada y análisis algorítmico previo; el <em>JusticeTech</em> rediseña e interconecta la infraestructura de la administración de justicia (RENIEC, SUNARP, Poder Judicial/SIJ/Curia), demostrando que un hub tecnológico es un laboratorio vivo de transformación institucional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN 1: HUBS GLOBALES ================= -->
+        <section id="seccion1" class="space-y-8">
+            <div class="border-l-4 border-gold-500 pl-4 space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gold-400">Análisis Comparativo Global</span>
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-white">Sección 1: Caracterización de los Hubs Tecnológicos</h2>
+            </div>
+
+            <!-- TABS DE HUBS -->
+            <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4" id="hubTabs">
+                <button onclick="switchHub('silicon')" id="tab-silicon" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-gradient-to-r from-gold-600 to-amber-500 text-dark-900 shadow-md">
+                    <i class="fa-solid fa-microchip"></i> Silicon Valley (Asignado)
+                </button>
+                <button onclick="switchHub('telaviv')" id="tab-telaviv" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-dark-800 text-slate-400 hover:text-white border border-slate-700">
+                    <i class="fa-solid fa-shield-halved"></i> Tel Aviv
+                </button>
+                <button onclick="switchHub('singapur')" id="tab-singapur" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-dark-800 text-slate-400 hover:text-white border border-slate-700">
+                    <i class="fa-solid fa-building-columns"></i> Singapur
+                </button>
+                <button onclick="switchHub('berlin')" id="tab-berlin" class="px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-dark-800 text-slate-400 hover:text-white border border-slate-700">
+                    <i class="fa-solid fa-gavel"></i> Berlín
+                </button>
+            </div>
+
+            <!-- SILICON VALLEY CONTENT -->
+            <div id="content-silicon" class="space-y-6">
+                <div class="glass-card-gold p-6 md:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-gold-600/30 pb-6 mb-6">
+                        <div>
+                            <span class="text-xs uppercase font-bold tracking-widest text-gold-400">Hub Tecnológico Global N° 1</span>
+                            <h3 class="text-3xl md:text-5xl font-serif font-black text-white tracking-tight">Silicon Valley</h3>
+                            <p class="text-slate-400 text-sm mt-1">Bahía de San Francisco, California, Estados Unidos</p>
+                        </div>
+                        <span class="px-4 py-1.5 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/40 text-xs font-semibold">
+                            Sorteo Asignado
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-globe"></i> Caracterización
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Capital mundial de la innovación digital; liderazgo absoluto en IA, nube, Big Data y ciberseguridad. Concentración única de empresas de tecnología, fondos masivos de Venture Capital y universidades de élite.
+                            </p>
+                        </div>
+
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-chart-line"></i> Factores de Éxito
+                            </div>
+                            <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+                                <li>Cultura de tolerancia al riesgo y error (<em>Fail Fast, Learn Faster</em>).</li>
+                                <li>Acceso masivo a capital de riesgo privado.</li>
+                                <li>Sinergia directa Universidad-Empresa.</li>
+                                <li>Marco regulatorio flexible para startups.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-rocket"></i> Startups & Modelos
+                            </div>
+                            <div class="text-xs text-slate-300 space-y-2">
+                                <p><strong class="text-gold-300">LegalZoom:</strong> Servicios legales automatizados B2C/B2B mediante suscripción + pago por uso.</p>
+                                <p><strong class="text-gold-300">Rocket Lawyer:</strong> Asesoría y redacción con IA (modelo freemium).</p>
+                                <p><strong class="text-gold-300">Casetext:</strong> Análisis jurisprudencial con IA generativa.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-scale-balanced"></i> Entorno Regulatorio
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Normativa federal y estatal fragmentada pero ágil; enfoque autorregulatorio del sector tecnológico; protección de la propiedad intelectual y adopción de validez jurídica de firmas digitales (ESIGN / UETA).
+                            </p>
+                        </div>
+
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-eye"></i> Futuro del Hub
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Liderazgo en IA Generativa y Modelos de Lenguaje Avanzados (LLMs) aplicados a la predicción procesal, auditoría de riesgos (<em>Compliance</em>) y resolución de disputas en línea (ODR).
+                            </p>
+                        </div>
+
+                        <div class="bg-dark-900/90 p-5 rounded-2xl border border-slate-800 space-y-2">
+                            <div class="text-gold-500 text-lg font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-building-columns"></i> Universidades & I+D
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Stanford (<em>CodeX - Center for Legal Informatics</em>), UC Berkeley y Harvard. Actúan como motores de investigación aplicada, incubadoras de startups e invención de patentes comerciales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTHER HUBS -->
+            <div id="content-telaviv" class="hidden space-y-6">
+                <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-700">
+                    <h3 class="text-3xl font-serif font-bold text-white mb-2">Tel Aviv (Israel)</h3>
+                    <p class="text-sm text-gold-400 mb-6">"Nación de Startups" · Especialización en Ciberseguridad & Criptografía</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Perfil & Éxito:</strong> Fortalezas masivas en ciberseguridad, criptografía militar aplicada al sector público e IA. Fuerte apoyo estatal e investigación en defensa.
+                        </div>
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Startups Destacadas:</strong> <em>LawGeex</em> (revisión automatizada de contratos con IA en modelo SaaS) y <em>Kira Systems</em> (extracción de cláusulas).
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-singapur" class="hidden space-y-6">
+                <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-700">
+                    <h3 class="text-3xl font-serif font-bold text-white mb-2">Singapur</h3>
+                    <p class="text-sm text-gold-400 mb-6">Digitalización Estatal · Tribunales Virtuales & Smart Nation</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Perfil & Éxito:</strong> Planificación gubernamental a largo plazo, cero tolerancia a la corrupción y sistema judicial 100% digital eLitigation.
+                        </div>
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Startups Destacadas:</strong> <em>CrimsonLogic</em> (plataformas de justicia digital e interconexión judicial pública).
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-berlin" class="hidden space-y-6">
+                <div class="glass-card p-6 md:p-8 rounded-3xl border border-slate-700">
+                    <h3 class="text-3xl font-serif font-bold text-white mb-2">Berlín (Alemania)</h3>
+                    <p class="text-sm text-gold-400 mb-6">Hub Europeo · Ética Digital, IA Confiable & GovTech</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Perfil & Éxito:</strong> Enfoque en protección estricta de datos (GDPR) y regulación ética del Reglamento de IA de la UE. Talentos multiculturales y bajos costos operativos.
+                        </div>
+                        <div class="bg-dark-900/80 p-4 rounded-xl border border-slate-800">
+                            <strong class="text-white block text-sm mb-1">Startups Destacadas:</strong> <em>DeepJudge</em> (predicción de resoluciones judiciales) y <em>LegalOne</em> (gestión de despachos).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN 2: APORTE AL DERECHO PERUANO ================= -->
+        <section id="seccion2" class="space-y-6">
+            <div class="border-l-4 border-gold-500 pl-4 space-y-1">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gold-400">Transferencia Tecnológica</span>
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-white">Sección 2: Aporte de los Hubs al Sistema de Justicia Peruano</h2>
+            </div>
+
+            <p class="text-sm text-slate-300">
+                Cuadro comparativo con la caracterización de casos reales de la problemática jurídica en el Perú y la solución específica aportada por cada hub tecnológico global:
+            </p>
+
+            <div class="overflow-x-auto rounded-2xl border border-gold-600/30 glass-card shadow-2xl">
+                <table class="w-full text-left border-collapse text-xs md:text-sm">
+                    <thead>
+                        <tr class="bg-dark-800/90 border-b border-gold-600/30 text-gold-400 font-serif">
+                            <th class="p-4 w-5/12 font-bold">Situación Actual (Casos Reales en el Perú)</th>
+                            <th class="p-4 w-2/12 font-bold text-center">HUB</th>
+                            <th class="p-4 w-5/12 font-bold">Aporte Específico para el Sistema de Justicia Peruano</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/80 text-slate-300">
+                        <tr class="hover:bg-dark-800/40 transition">
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-white block mb-1">Estafas inmobiliarias y falsificación de títulos:</strong>
+                                Casos reales como las mafias de la "Red Orellana" o estafas en compraventa de predios en zonas de expansión urbana (ej. Carabayllo o Trujillo), donde falsos dueños usan minutas adulteradas debido a la falta de validación en tiempo real entre Notarías, RENIEC y SUNARP.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 text-xs font-bold block">
+                                    Silicon Valley
+                                </span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-gold-300 block mb-1">Cloud, IA Predictiva & Interoperabilidad en Tiempo Real:</strong>
+                                Aplicación del modelo de plataformas escalables para implementar redes de APIs seguras. Valida identidad (RENIEC), titularidad (SUNARP) y detecta patrones de falsificación antes de la firma de la minuta notarial.
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-dark-800/40 transition">
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-white block mb-1">Ataques cibernéticos y filtración de datos públicos:</strong>
+                                Casos reales de vulneraciones informáticas a sistemas estatales (ej. filtraciones de bases de datos de RENIEC o suplantación en plataformas públicas), arriesgando la cadena de custodia de expedientes judiciales informáticos.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/30 text-xs font-bold block">
+                                    Tel Aviv
+                                </span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-gold-300 block mb-1">Ciberseguridad Avanzada & Encriptación Criptográfica:</strong>
+                                Aplicación de ecosistemas de protección militar informáticos para blindar el Sistema Integrado Judicial (SIJ) y la plataforma Curia. Garantiza la inalterabilidad del Expediente Judicial Electrónico (EJE).
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-dark-800/40 transition">
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-white block mb-1">Carga procesal y extrema lentitud en juicios menores:</strong>
+                                Casos reales como demandas de alimentos o disputas comerciales simples donde un proceso sumarísimo demora más de 2 a 3 años por uso de notificaciones en papel y expedientes físicos.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 text-xs font-bold block">
+                                    Singapur
+                                </span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-gold-300 block mb-1">Tribunales Virtuales Integrados & Resolució ODR:</strong>
+                                Adopción del sistema eLitigation para tramitación 100% digital, resolución de disputas menores en línea (ODR) y asistentes de IA para preparar resúmenes de causas, reduciendo hasta 70% los tiempos procesales.
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-dark-800/40 transition">
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-white block mb-1">Burocracia y trabas para formalización de MYPEs:</strong>
+                                Casos reales de emprendedores peruanos que tardan meses en trámites ante SUNAT, SUNARP e INDECOPI para formalizar su empresa o registrar su marca, cayendo en la informalidad.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/30 text-xs font-bold block">
+                                    Berlín
+                                </span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                <strong class="text-gold-300 block mb-1">Sandboxes Regulatorios & GovTech Automatizado:</strong>
+                                Adaptación de plataformas "constitución e inscripción en un clic" con plantillas inteligentes de estatutos y licencias bajo entornos normativos de prueba seguros.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN 3: PROPUESTA LEXISHUB PERÚ ================= -->
+        <section id="seccion3" class="space-y-10">
+            <div class="border-l-4 border-gold-500 pl-4 space-y-2">
+                <span class="text-xs font-semibold uppercase tracking-widest text-gold-400">Solución Aplicada a Problema Real</span>
+                <h2 class="text-2xl md:text-4xl font-serif font-bold text-white">Sección 3: Propuesta "LexisHub Perú"</h2>
+                
+                <div class="mt-4 p-6 rounded-2xl bg-gradient-to-r from-dark-800 via-amber-950/40 to-dark-900 border border-gold-500/40 relative overflow-hidden shadow-2xl">
+                    <div class="absolute -right-6 -bottom-6 text-slate-800 text-9xl opacity-20 pointer-events-none font-serif">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-gold-500 bg-gold-500/10 px-2.5 py-1 rounded-md border border-gold-500/30">Caso de Estudio Nacional</span>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-amber-100 mt-2 tracking-wide italic">
+                        "Tierra prometida, engaño seguro"
+                    </h3>
+                    <p class="text-xs md:text-sm text-slate-300 max-w-3xl mt-2 leading-relaxed">
+                        Análisis del fraude en la compraventa de terrenos por suplantación de titular, superposición de medidas catastrales e inacción temprana de las instituciones.
+                    </p>
+                </div>
+            </div>
+
+            <!-- DIAGRAMAS DE FLUJO INTERACTIVOS VISUALES -->
+            <div class="space-y-12">
+                
+                <!-- DIAGRAMA DE FLUJO 1: RECORRIDO ACTUAL EXACTO DE LA IMAGEN DEL USUARIO -->
+                <div class="bg-gradient-to-b from-slate-900 via-dark-800 to-dark-900 p-4 md:p-8 rounded-3xl border border-pink-500/40 space-y-6 shadow-2xl">
+                    
+                    <!-- ENCABEZADO ESTILO IMAGEN -->
+                    <div class="text-center py-3 px-6 rounded-full bg-pink-200/90 border-2 border-pink-400 text-dark-900 max-w-2xl mx-auto shadow-md">
+                        <h3 class="text-base md:text-xl font-serif font-black flex items-center justify-center gap-2">
+                            ✨ Diagrama de Flujo ✨
+                        </h3>
+                        <p class="text-xs md:text-sm font-bold text-pink-900">
+                            "Recorrido actual del proceso: Estafa en la compra de un terreno"
+                        </p>
+                    </div>
+
+                    <!-- FLUJO PRINCIPAL PASO A PASO -->
+                    <div class="flex flex-col items-center space-y-4 max-w-5xl mx-auto">
+                        
+                        <!-- INICIO -->
+                        <div class="w-full max-w-md bg-purple-200 text-purple-900 font-bold px-6 py-2.5 rounded-full border-2 border-purple-400 text-center shadow">
+                            Inicio
+                        </div>
+                        <div class="text-pink-400 text-lg"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- PASO 1 -->
+                        <div class="w-full max-w-xl bg-purple-100 text-slate-900 p-3 rounded-2xl border-2 border-purple-300 flex items-center gap-4 shadow text-xs md:text-sm font-medium">
+                            <div class="w-10 h-10 rounded-full bg-purple-200 text-purple-700 flex-shrink-0 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>Una persona desea comprar un terreno y confía en el vendedor.</div>
+                        </div>
+                        <div class="text-pink-400 text-lg"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- PASO 2 -->
+                        <div class="w-full max-w-xl bg-purple-100 text-slate-900 p-3 rounded-2xl border-2 border-purple-300 flex items-center gap-4 shadow text-xs md:text-sm font-medium">
+                            <div class="w-10 h-10 rounded-full bg-purple-200 text-purple-700 flex-shrink-0 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                            <div>Se firma un documento (contrato privado o minuta) y se entrega el dinero.</div>
+                        </div>
+                        <div class="text-pink-400 text-lg"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- PASO 3 - ALERTA -->
+                        <div class="w-full max-w-xl bg-amber-100 text-amber-950 p-3 rounded-2xl border-2 border-amber-400 flex items-center gap-4 shadow text-xs md:text-sm font-semibold">
+                            <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-700 flex-shrink-0 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div>Tiempo después, descubre que el vendedor no era el verdadero dueño: existen varios dueños registrados, deudas y ventas previas.</div>
+                        </div>
+                        <div class="text-pink-400 text-lg"><i class="fa-solid fa-arrow-down"></i></div>
+
+                        <!-- PASO 4 - VERIFICACIÓN -->
+                        <div class="w-full max-w-2xl bg-purple-300 text-purple-950 p-3 rounded-2xl border-2 border-purple-400 text-center text-xs md:text-sm font-bold shadow">
+                            Se inicia la verificación en las entidades correspondientes para confirmar la titularidad y la situación del terreno.
+                        </div>
+                        <div class="text-pink-400 text-lg"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+
+                    <!-- SECCIÓN ENTIDADES INVOLUCRADAS -->
+                    <div class="space-y-4 pt-2">
+                        <h4 class="text-xs uppercase font-bold tracking-widest text-pink-300 text-center">
+                            Entidades involucradas en el recorrido
+                        </h4>
+                        
+                        <!-- FILA 1 DE ENTIDADES -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2 text-slate-900">
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-id-card"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">RENIEC</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Verifica la identidad del vendedor.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-house-chimney-window"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">COFOPRI</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Informa sobre la propiedad y formalización.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-file-pen"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">Notaría</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Revisa la validez de los documentos y la firma.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-landmark font-bold"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">SUNARP</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Consulta la propiedad y propietarios registrados.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-receipt"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">SUNAT</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Verifica deudas tributarias y actividad económica.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-city"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">Municipalidad</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Confirma licencias y uso del suelo.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-scale-balanced"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">Poder Judicial</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Consulta procesos judiciales sobre el terreno.</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-shield-volcano"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">INDECI</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Evalúa riesgos en la zona (desastres).</div>
+                            </div>
+                            <div class="bg-blue-50 p-2.5 rounded-xl border border-blue-300 text-center space-y-1.5 shadow-sm col-span-2 sm:col-span-1">
+                                <div class="text-blue-700 text-base"><i class="fa-solid fa-building-columns"></i></div>
+                                <div class="font-bold text-[11px] text-blue-900">Bancos</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Informa sobre créditos o hipotecas del terreno.</div>
+                            </div>
+                        </div>
+
+                        <!-- FILA 2 DE ENTIDADES -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-2 text-slate-900 pt-2">
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-trowel-bricks"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">Ministerio Vivienda</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Verifica proyectos, obras y saneamiento.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-hands-holding-child"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">Defensoría del Pueblo</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Brinda orientación y supervisa derechos.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-vault"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">SBS</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Revisa operaciones financieras y seguros.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-compass-drafting"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">SUNAFIL</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Supervisa uso adecuado del suelo y formalización.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">Policía Nacional</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Investiga el hecho y busca al responsable.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-gavel"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">Fiscalía</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Inicia investigación penal por estafa.</div>
+                            </div>
+                            <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-300 text-center space-y-1.5 shadow-sm col-span-2 sm:col-span-1">
+                                <div class="text-purple-700 text-base"><i class="fa-solid fa-scale-unbalanced"></i></div>
+                                <div class="font-bold text-[10px] text-purple-900">Fiscalía Patrimonial</div>
+                                <div class="text-[10px] text-slate-600 leading-tight">Lleva el caso y solicita sanción.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DECISIÓN Y RAMAS -->
+                    <div class="pt-6 space-y-6">
+                        <div class="flex justify-center">
+                            <div class="bg-emerald-300 text-emerald-950 font-black px-6 py-3 rounded-full border-2 border-emerald-500 text-center text-sm md:text-base shadow-md flex items-center gap-2">
+                                <i class="fa-solid fa-circle-question"></i> ¿Se confirma el fraude?
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <!-- RAMA SÍ -->
+                            <div class="bg-purple-900/40 p-4 rounded-2xl border border-purple-400/50 space-y-3">
+                                <div class="inline-block bg-purple-300 text-purple-950 px-3 py-1 rounded-full font-bold text-xs">
+                                    SÍ
+                                </div>
+                                <div class="space-y-2 text-xs text-slate-200">
+                                    <div class="bg-dark-900/90 p-3 rounded-xl border border-purple-500/30 flex items-center gap-3">
+                                        <i class="fa-solid fa-file-invoice text-purple-400 text-lg"></i>
+                                        <span>Se presenta una denuncia en la Policía Nacional del Perú y el caso pasa al Ministerio Público.</span>
+                                    </div>
+                                    <div class="bg-dark-900/90 p-3 rounded-xl border border-purple-500/30 flex items-center gap-3">
+                                        <i class="fa-solid fa-gavel text-purple-400 text-lg"></i>
+                                        <span>El Poder Judicial procesa el caso, con las pruebas proporcionadas por las entidades.</span>
+                                    </div>
+                                    <div class="bg-dark-900/90 p-3 rounded-xl border border-purple-500/30 flex items-center gap-3">
+                                        <i class="fa-solid fa-scale-balanced text-purple-400 text-lg"></i>
+                                        <span>Se determina la responsabilidad del vendedor y se dicta sentencia.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- RAMA NO -->
+                            <div class="bg-emerald-900/40 p-4 rounded-2xl border border-emerald-400/50 space-y-3">
+                                <div class="inline-block bg-emerald-300 text-emerald-950 px-3 py-1 rounded-full font-bold text-xs">
+                                    NO
+                                </div>
+                                <div class="space-y-2 text-xs text-slate-200">
+                                    <div class="bg-dark-900/90 p-3 rounded-xl border border-emerald-500/30 flex items-center gap-3">
+                                        <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+                                        <span>Se soluciona el problema (por ejemplo, error en los registros o documentación).</span>
+                                    </div>
+                                    <div class="bg-dark-900/90 p-3 rounded-xl border border-emerald-500/30 flex items-center gap-3">
+                                        <i class="fa-solid fa-handshake-simple text-emerald-400 text-lg"></i>
+                                        <span>Se regulariza la situación del terreno con el apoyo de la entidad correspondiente.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- POSIBLES CONSECUENCIAS -->
+                            <div class="bg-pink-950/60 p-4 rounded-2xl border-2 border-pink-400/60 space-y-3">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-pink-300 flex items-center gap-2">
+                                    <i class="fa-solid fa-list-check"></i> Posibles Consecuencias
+                                </h4>
+                                <ul class="space-y-2 text-xs text-slate-200">
+                                    <li class="bg-dark-900/90 p-2.5 rounded-xl border border-pink-500/30 flex items-center gap-2.5">
+                                        <i class="fa-solid fa-sack-dollar text-amber-400 text-base"></i>
+                                        <span>Devolución del dinero y anulación del contrato.</span>
+                                    </li>
+                                    <li class="bg-dark-900/90 p-2.5 rounded-xl border border-pink-500/30 flex items-center gap-2.5">
+                                        <i class="fa-solid fa-handcuffs text-red-400 text-base"></i>
+                                        <span>Sanción penal para el responsable (por estafa y falsificación).</span>
+                                    </li>
+                                    <li class="bg-dark-900/90 p-2.5 rounded-xl border border-pink-500/30 flex items-center gap-2.5">
+                                        <i class="fa-solid fa-house-circle-check text-emerald-400 text-base"></i>
+                                        <span>Regularización del terreno a favor del comprador (si corresponde).</span>
+                                    </li>
+                                    <li class="bg-dark-900/90 p-2.5 rounded-xl border border-pink-500/30 flex items-center gap-2.5">
+                                        <i class="fa-solid fa-shield-virus text-blue-400 text-base"></i>
+                                        <span>Mayor control y verificación en la compra de terrenos.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FIN -->
+                        <div class="flex justify-center pt-4">
+                            <div class="bg-pink-300 text-pink-950 font-black px-8 py-2.5 rounded-full border-2 border-pink-500 text-center text-sm shadow-lg flex items-center gap-2">
+                                🏁 Fin
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIAGRAMA DE FLUJO 2: PROPUESTA LEXISHUB PERÚ -->
+                <div class="glass-card-gold p-6 md:p-8 rounded-3xl border border-gold-500/50 space-y-6 shadow-2xl relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center gap-2 border-b border-gold-500/30 pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-r from-gold-600 to-amber-500 text-dark-900 flex items-center justify-center font-bold text-lg shadow-lg">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-serif font-bold text-white">Diagrama de Flujo 2: Propuesta Ecosistema "LexisHub Perú"</h3>
+                                <p class="text-xs text-gold-400">Circuito técnico de interoperabilidad segura y analítica predictiva de datos</p>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/40 self-start md:self-auto">
+                            Flujo Continuo Prevención Digital
+                        </span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex justify-center">
+                            <div class="bg-dark-900 p-3.5 px-6 rounded-2xl border border-gold-500/40 text-center shadow-lg max-w-md w-full">
+                                <span class="text-[10px] uppercase font-bold text-gold-500 tracking-wider">Inicio de Trámite Inmobiliario</span>
+                                <h4 class="text-sm font-bold text-white flex items-center justify-center gap-2 mt-0.5">
+                                    <i class="fa-solid fa-laptop-code text-gold-400"></i> Plataforma Central LexisHub Perú
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center text-gold-500/70 text-lg">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="bg-dark-900 p-4 rounded-2xl border border-blue-500/30 space-y-1 text-center">
+                                <div class="text-blue-400 text-sm font-bold flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-address-card"></i> RENIEC API
+                                </div>
+                                <p class="text-[11px] text-slate-300">Validación biométrica facial/dactilar en tiempo real de comprador y vendedor.</p>
+                            </div>
+
+                            <div class="bg-dark-900 p-4 rounded-2xl border border-amber-500/30 space-y-1 text-center">
+                                <div class="text-amber-400 text-sm font-bold flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-vault"></i> SUNARP & COFOPRI
+                                </div>
+                                <p class="text-[11px] text-slate-300">Verificación inmediata de titularidad registral, gravámenes, embargos y título.</p>
+                            </div>
+
+                            <div class="bg-dark-900 p-4 rounded-2xl border border-emerald-500/30 space-y-1 text-center">
+                                <div class="text-emerald-400 text-sm font-bold flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-map-location-dot"></i> Municipalidad / INDECI
+                                </div>
+                                <p class="text-[11px] text-slate-300">Cruce de planos catastrales y zonificación de riesgos o desprendimiento.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center text-gold-500/70 text-lg">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-amber-950/60 via-dark-900 to-amber-950/60 p-5 rounded-2xl border border-gold-500/60 text-center space-y-2 shadow-xl">
+                            <span class="text-[10px] uppercase font-bold text-gold-400 tracking-widest bg-gold-500/10 px-3 py-1 rounded-full border border-gold-500/30">
+                                Infraestructura Algorítmica Privada
+                            </span>
+                            <h4 class="text-lg font-bold text-white flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-brain text-gold-400"></i> Motor Inteligente "Juztina"
+                            </h4>
+                            <p class="text-xs text-slate-300 max-w-2xl mx-auto">
+                                Analiza automáticamente la consistencia documental y detecta patrones de duplicidad, firmas adulteradas o incongruencias catastrales emitiendo alertas preventivas.
+                            </p>
+                        </div>
+
+                        <div class="flex justify-center text-gold-500/70 text-lg">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-dark-900 p-4 rounded-2xl border border-emerald-500/40 space-y-2">
+                                <div class="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase">
+                                    <i class="fa-solid fa-circle-check"></i> Escenario A: Operación Conforme
+                                </div>
+                                <p class="text-xs text-slate-300">
+                                    Se emite certificado digital validado. La Notaría otorga la escritura pública y SUNARP inscribe en minutos sin riesgo de fraude.
+                                </p>
+                            </div>
+
+                            <div class="bg-dark-900 p-4 rounded-2xl border border-gold-500/40 space-y-2">
+                                <div class="flex items-center gap-2 text-gold-400 text-xs font-bold uppercase">
+                                    <i class="fa-solid fa-gavel"></i> Escenario B: Articulación Procesal (Si se judicializa)
+                                </div>
+                                <p class="text-xs text-slate-300">
+                                    La data codificada viaja inmediatamente a la infraestructura procesal de <strong class="text-white">Curia</strong> y el <strong class="text-white">SIJ (Sistema Integrado Judicial)</strong> del Poder Judicial para medidas cautelares inmediatas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ALIADOS ESTRATÉGICOS -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+                <h4 class="text-sm font-bold text-gold-400 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-handshake"></i> Aliados Estratégicos del Ecosistema
+                </h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center text-xs">
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-id-card text-gold-500 text-base mb-1 block"></i> RENIEC
+                    </div>
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-file-contract text-gold-500 text-base mb-1 block"></i> SUNARP
+                    </div>
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-city text-gold-500 text-base mb-1 block"></i> Municipalidades
+                    </div>
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-pen-nib text-gold-500 text-base mb-1 block"></i> Notarías
+                    </div>
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-robot text-gold-500 text-base mb-1 block"></i> IA Juztina
+                    </div>
+                    <div class="bg-dark-900/80 p-3 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-gavel text-gold-500 text-base mb-1 block"></i> SIJ / Curia
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FLOATING CHATBOT WIDGET -->
+    <div class="fixed bottom-5 right-5 z-50">
+        <button onclick="toggleChatbot()" class="w-14 h-14 rounded-full bg-gradient-to-r from-gold-600 to-amber-500 text-dark-900 shadow-2xl flex items-center justify-center text-2xl hover:scale-105 transition gold-border-glow">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+
+        <div id="chatbot-window" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 glass-card-gold rounded-2xl shadow-2xl border border-gold-500/40 overflow-hidden flex flex-col h-[450px]">
+            <div class="bg-dark-800 p-3.5 border-b border-gold-500/30 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-gold-500 text-dark-900 flex items-center justify-center font-bold text-xs">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">LexisHub Assistant AI</h4>
+                        <span class="text-[10px] text-emerald-400">● En línea · Responde sobre Hubs y Peru</span>
+                    </div>
+                </div>
+                <button onclick="toggleChatbot()" class="text-slate-400 hover:text-white text-xs">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="chat-messages" class="p-3 flex-grow overflow-y-auto space-y-3 text-xs">
+                <div class="bg-dark-900/90 p-3 rounded-2xl border border-slate-800 text-slate-200">
+                    ¡Hola! Soy el asistente virtual del proyecto <strong>LexisHub Perú</strong>. ¿En qué puedo ayudarte sobre Silicon Valley, Tel Aviv, Singapur, Berlín o el caso de estafa inmobiliaria?
+                </div>
+            </div>
+
+            <div class="p-2 bg-dark-900/90 border-t border-slate-800 flex gap-1.5 overflow-x-auto text-[10px]">
+                <button onclick="sendPreset('¿Qué caracteriza a Silicon Valley?')" class="px-2 py-1 rounded-lg bg-dark-800 text-gold-400 border border-gold-500/30 whitespace-nowrap">Silicon Valley</button>
+                <button onclick="sendPreset('¿Cómo funciona la IA Juztina?')" class="px-2 py-1 rounded-lg bg-dark-800 text-gold-400 border border-gold-500/30 whitespace-nowrap">IA Juztina</button>
+                <button onclick="sendPreset('¿Qué aporta Singapur a Perú?')" class="px-2 py-1 rounded-lg bg-dark-800 text-gold-400 border border-gold-500/30 whitespace-nowrap">Singapur</button>
+            </div>
+
+            <div class="p-2.5 bg-dark-800 border-t border-slate-800 flex gap-2">
+                <input type="text" id="chat-input" placeholder="Escribe tu consulta aquí..." class="flex-grow bg-dark-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-none focus:border-gold-500" onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()" class="px-3 py-1.5 bg-gold-500 text-dark-900 rounded-xl font-bold text-xs hover:bg-gold-400">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-dark-900 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>© 2026 LexisHub Perú · Portafolio Digital de Derecho & Tecnologías de la Información.</p>
+            <p class="text-[10px] text-slate-600">Desarrollado para la evaluación académica de LegalTech & JusticeTech.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        function switchHub(hub) {
+            const hubs = ['silicon', 'telaviv', 'singapur', 'berlin'];
+            hubs.forEach(h => {
+                document.getElementById(`content-${h}`).classList.add('hidden');
+                const tab = document.getElementById(`tab-${h}`);
+                tab.className = "px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-dark-800 text-slate-400 hover:text-white border border-slate-700";
+            });
+
+            document.getElementById(`content-${hub}`).classList.remove('hidden');
+            const activeTab = document.getElementById(`tab-${hub}`);
+            activeTab.className = "px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-gradient-to-r from-gold-600 to-amber-500 text-dark-900 shadow-md";
+        }
+
+        function toggleChatbot() {
+            const win = document.getElementById('chatbot-window');
+            win.classList.toggle('hidden');
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === 'Enter') sendMessage();
+        }
+
+        function sendPreset(text) {
+            document.getElementById('chat-input').value = text;
+            sendMessage();
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const query = input.value.trim();
+            if (!query) return;
+
+            const messagesDiv = document.getElementById('chat-messages');
+
+            const userMsg = document.createElement('div');
+            userMsg.className = "bg-gold-600/20 text-gold-200 p-2.5 rounded-2xl border border-gold-500/30 text-right ml-6";
+            userMsg.textContent = query;
+            messagesDiv.appendChild(userMsg);
+
+            input.value = '';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+            setTimeout(() => {
+                const aiMsg = document.createElement('div');
+                aiMsg.className = "bg-dark-900/90 p-3 rounded-2xl border border-slate-800 text-slate-200 mr-6";
+                aiMsg.innerHTML = getAIResponse(query);
+                messagesDiv.appendChild(aiMsg);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }, 600);
+        }
+
+        function getAIResponse(q) {
+            const text = q.toLowerCase();
+            if (text.includes('silicon') || text.includes('valley')) {
+                return "<strong>Silicon Valley</strong> es el hub asignado. Destaca por su capital de riesgo masivo, startups como <em>LegalZoom</em> e <em>Ironclad</em>, e investigación en Stanford CodeX aplicada a LegalTech.";
+            } else if (text.includes('juztina') || text.includes('algoritmo')) {
+                return "<strong>IA Juztina</strong> es nuestra infraestructura algorítmica privada que analiza la consistencia documental y emite alertas preventivas ante estafas inmobiliarias.";
+            } else if (text.includes('singapur')) {
+                return "<strong>Singapur</strong> aporta el modelo de tribunales virtuales 100% digitales (<em>eLitigation</em>) y la resolución de disputas menores en línea (ODR).";
+            } else if (text.includes('tel aviv') || text.includes('israel')) {
+                return "<strong>Tel Aviv</strong> aporta ciberseguridad avanzada y criptografía para blindar la inalterabilidad del Expediente Judicial Electrónico (EJE).";
+            } else if (text.includes('berlin') || text.includes('berlín')) {
+                return "<strong>Berlín</strong> aporta regulación ética de IA y entornos de prueba (<em>sandboxes</em> regulatorios) para formalizar MYPEs velozmente.";
+            } else {
+                return "El proyecto <strong>LexisHub Perú</strong> integra la interoperabilidad entre Notarías, RENIEC, SUNARP y el Poder Judicial (SIJ/Curia) asistidos por la IA Juztina para prevenir la estafa de terrenos.";
+            }
+        }
+    </script>
+</body>
+</html>
